@@ -61,7 +61,8 @@ $(document).ready(function () {
         }
             
         var myimg = test.sort( function(){ return Math.round( Math.random() ) - 0.5 ; } );
-        $("#poetry").attr("src", "images/answer/"+myimg[0]+".jpg");
+        var s3 = "//s3-ap-northeast-1.amazonaws.com/ehanlin-web-resource/zongzi106/latest/";
+        $("#poetry").attr("src", s3 + "images/answer/"+myimg[0]+".jpg");
             
         myurl = 'https://www.facebook.com/sharer/sharer.php?u=http://wowsite.tw/demo/ehanlin/'+myimg[0]+'.html&amp;src=sdkpreparse';
             
