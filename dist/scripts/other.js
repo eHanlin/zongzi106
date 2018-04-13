@@ -1,6 +1,7 @@
 var startDate = new Date();
 var endDate   = new Date('2018/05/18');
 var spantime  = (endDate - startDate)/1000;
+var s3 = "//s3-ap-northeast-1.amazonaws.com/ehanlin-web-resource/zongzi106/latest/";
 var myurl;
 var pimg;
 
@@ -61,7 +62,6 @@ $(document).ready(function () {
         }
             
         var myimg = test.sort( function(){ return Math.round( Math.random() ) - 0.5 ; } );
-        var s3 = "//s3-ap-northeast-1.amazonaws.com/ehanlin-web-resource/zongzi106/latest/";
         $("#poetry").attr("src", s3 + "images/answer/"+myimg[0]+".jpg");
             
         myurl = 'https://www.facebook.com/sharer/sharer.php?u=http://wowsite.tw/demo/ehanlin/'+myimg[0]+'.html&amp;src=sdkpreparse';
@@ -88,25 +88,25 @@ $(document).ready(function () {
             
         switch(pimg){
             case 6:
-                $("#showimg").attr("src", "images/gift/6.png");
+                $("#showimg").attr("src", s3 + "images/gift/6.png");
                 break;
             case 7:
-                $("#showimg").attr("src", "images/gift/7.png");
+                $("#showimg").attr("src", s3 + "images/gift/7.png");
                 break;
             case 8:
-                $("#showimg").attr("src", "images/gift/8.png");
+                $("#showimg").attr("src", s3 + "images/gift/8.png");
                 break;
             case 9:
-                $("#showimg").attr("src", "images/gift/9.png");
+                $("#showimg").attr("src", s3 + "images/gift/9.png");
                 break;
             case 10:
-                $("#showimg").attr("src", "images/gift/10.png");
+                $("#showimg").attr("src", s3 + "images/gift/10.png");
                 break;
             case 11:
-                $("#showimg").attr("src", "images/gift/11.png");
+                $("#showimg").attr("src", s3 + "images/gift/11.png");
                 break;
             case 12:
-                $("#showimg").attr("src", "images/gift/12.png");
+                $("#showimg").attr("src", s3 + "images/gift/12.png");
                 break;
         }
             
