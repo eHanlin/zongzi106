@@ -33,27 +33,4 @@ $(function(){
 		$("#qs").stop(true,false).fadeOut(0);
 	});
 
-	// 回填資料視窗
-	$(".chooseme li").click(function(){
-		$(".popupwrapper").stop(true,false).fadeIn(0);		
-	});
-    
-    //送出資料時需進行處理
-    /*
-	$("#popupcheck").click(function(){
-        
-        
-        
-        //關閉視窗
-		$(".popupwrapper").stop(true,false).fadeOut(0);	
-		$("#boat").stop(true,false).fadeOut(0);
-		$(".answerchk").stop(true,false).slideDown(500);
-        
-	});
-    
-	$("#popupchanel").click(function(){			
-		$(".popupwrapper").stop(true,false).fadeOut(0);			
-	});
-	*/
-	
 });
