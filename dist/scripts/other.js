@@ -1,5 +1,5 @@
 var startDate = new Date();
-var endDate   = new Date('2018/05/18');
+var endDate   = new Date('2018/05/20');
 var spantime  = (endDate - startDate)/1000;
 var s3 = "//s3-ap-northeast-1.amazonaws.com/ehanlin-web-resource/zongzi106/latest/";
 var myurl;
